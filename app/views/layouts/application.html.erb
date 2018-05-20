@@ -11,8 +11,10 @@
 
   <body>
     <% if flash[:notice] %>
-        <div class="alert alert-info"><%= flash[:notice]
-        %></div>
+        <div class="alert alert-info"><%= flash[:notice] %></div>
+    <% end %>
+    <% if signed_in? %>
+          <div>Hola <%= current_user.name %></div>
     <% end %>
     <%= yield %>
   </body>

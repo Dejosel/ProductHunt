@@ -1,0 +1,9 @@
+es:
+ activerecord:
+  attributes:
+    user:
+      Email: "El Email"
+      name: "El nombre"
+      password: "La contraseña"
+    product:
+        name: "El nombre"
